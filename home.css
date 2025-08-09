@@ -1,0 +1,167 @@
+/* header----------------------------- */
+
+/* Navbar link style */
+.contents a {
+  margin-left: 50px;
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+  transition: color 0.3s ease-in-out;
+}
+
+header {
+  background-color: rgba(254, 254, 254, 0.871);
+  /* transparent white */
+  backdrop-filter: blur(10px);
+  /* blur behind element */
+  -webkit-backdrop-filter: blur(90px);
+  /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0);
+  /* light border */
+}
+
+/* Text color change on hover */
+.contents a:hover {
+  color: #d5ad0c;
+}
+
+.contents a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #facc15;
+  transition: width 0.3s ease-in-out;
+}
+
+
+.contents a.active::after {
+  width: 100%;
+}
+
+.contents a:hover::after {
+  width: 100%;
+}
+
+/* Social icons hover */
+.social i {
+  margin-left: 20px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social i:hover {
+  color: #facc15;
+  transform: scale(1.1);
+}
+
+
+/* mobile navbar */
+
+/* media screen */
+
+@media (max-width:600px) {
+
+  .contents a {
+    margin-bottom: 20px;
+  }
+
+  .contents .active {
+    color: #facc15;
+  }
+
+
+}
+
+@media (min-width:600px) {
+
+  .mobile_nav {
+    display: none;
+  }
+
+}
+
+
+
+
+/* main Section------------------------------ */
+
+
+.main_bg {
+
+  background-image: url(./media/porsche-911-carrera-3840x2160-23034.jpg );
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_bg h1 {
+  font-size: 42px;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-weight: 800;
+  padding-top: 180px;
+  padding-left: 99px;
+  color: #212b4b;
+}
+
+.main_bg p {
+  font-size: 19px;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 20px;
+  padding-left: 105px;
+  color: #212b4b;
+}
+
+.main_bg button {
+  background-color: #2e3c67;
+  margin-left: 105px;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.main_bg button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.651);
+}
+
+
+/* about--- */
+
+.about h4 {
+  font-size: 12px;
+  font-family: "Lexend Exa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #212b4b;
+
+}
+
+.about h1 {
+  font-size: 34px;
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  color: #212b4b;
+  font-style: normal;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.about p{
+  color: #212b4b;
+}
