@@ -2,155 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ceramic Coating - Car Detailing</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceramic Coating</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="home.css">
 </head>
 
-<body class="bg-black text-white font-sans">
+<body>
 
-    <!-- Navbar -->
-    <nav class="flex justify-between items-center px-6 py-4 bg-black border-b border-gray-800">
-        <div class="text-2xl font-bold">Car Detailing</div>
-        <ul class="flex space-x-6">
-            <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
-            <li><a href="packages.html" class="hover:text-yellow-400">Packages</a></li>
-            <li><a href="ceramic-coating.html" class="text-yellow-400 font-semibold">Ceramic Coating</a></li>
-            <li><a href="exterior-detailing.html" class="hover:text-yellow-400">Exterior Detailing</a></li>
-            <li><a href="gallery.html" class="hover:text-yellow-400">Gallery</a></li>
-        </ul>
+  <!-- Navbar (exactly your original HTML) -->
+<header class="fixed top-0 left-0 w-full z-50">
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+    <div class="md:mx-20 flex md:justify-center items-center h-30">
+        
+        <!-- Hamburger Menu (Mobile) -->
+        <label for="menu-toggle" class="cursor-pointer sm:hidden">
+            <i class="fas fa-bars text-xl ml-5"></i>
+        </label>
+
+        <!-- Logo -->
+        <div class="logo md:mr-10 shrink-0 md:ml-0 ml-25">
+            <img src="./media/logo2-removebg-preview.png" alt="Logo" 
+                 class="h-20 w-auto object-contain"
+                 style="filter: contrast(150%);">
+        </div>
+
+        <!-- Menu Links desktop -->
+        <nav class="flex hidden md:flex">
+            <div class="contents text-gray-950 space-x-6">
+                <a href="#" class="active">HOME</a>
+                <a href="#">PACKAGES</a>
+                <a href="#">CERAMIC COATINGS</a>
+                <a href="#">EXTERIOR DETAILING</a>
+                <a href="#">GALLERY</a>
+                <a href="#">CONTACT US</a>
+            </div>
+            <!-- Social Icons -->
+            <div class="social text-2xl text-gray-900 ml-10">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Menu Links mobile -->
+    <nav class="mobile_nav hidden peer-checked:flex flex-col bg-white">
+        <div class="contents text-gray-950 gap-5 p-5">
+            <a href="#" class="active">HOME</a>
+            <a href="#">PACKAGES</a>
+            <a href="#">CERAMIC COATINGS</a>
+            <a href="#">EXTERIOR DETAILING</a>
+            <a href="#">GALLERY</a>
+            <a href="#">CONTACT US</a>
+        </div>
+        <div class="social text-2xl text-gray-900 ml-5 my-5">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
     </nav>
-
-    <!-- Hero Section -->
-    <section class="h-[80vh] bg-cover bg-center flex flex-col justify-center items-center text-center"
-        style="background-image: url('https://wallpaperbat.com/img/62514-black-face-car-wallpaper-2560x1600.jpg');">
-        <div class="absolute inset-0 bg-black opacity-40"></div>
-        <h1 class="text-4xl md:text-6xl font-extrabold">Premium Ceramic Coating</h1>
-        <p class="mt-4 text-lg md:text-xl text-gray-200">Protect Your Car's Shine for Years</p>
-        <a href="#booking"
-            class="mt-6 px-7 py-4 bg-yellow-400 text-black rounded-full font-bold hover:bg-yellow-500">Book Now</a>
-    </section>
-
-    <!-- What is Ceramic Coating -->
-    <section class="py-16 px-6 md:px-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <img src="https://media.istockphoto.com/id/1209852194/photo/applying-nanoceramics-to-cars-car-paint-protection-concept.jpg?s=612x612&w=0&k=20&c=-SpriK-nTY6EunTL4uXGrH0Rxb-z5qFoCye9s3sz-fs="
-            alt="Applying Ceramic Coating" class="rounded-lg shadow-lg w-full">
-        <div>
-            <h2 class="text-4xl font-bold text-yellow-400 mb-4">What is Ceramic Coating?</h2>
-            <p class="text-gray-300 leading-relaxed">
-                Ceramic coating is a liquid polymer applied to the exterior of your vehicle. It chemically bonds with
-                your car's paint,
-                creating a protective layer that enhances shine, repels water, and guards against scratches, UV rays,
-                and harsh weather.
-                Ceramic coating is a liquid polymer applied to the exterior of your vehicle. It chemically bonds with
-                your car's paint,
-                creating a protective layer that enhances shine, repels water, and guards against scratches, UV rays,
-                and harsh weather.
-                Ceramic coating is a liquid polymer applied to the exterior of your vehicle. It chemically bonds with
-                your car's paint,
-                creating a protective layer that enhances shine, repels water, and guards against scratches, UV rays,
-                and harsh weather. <br><br>
-
-                Ceramic coating is a liquid polymer applied to the exterior of your vehicle. It chemically bonds with
-                your car's paint,
-                creating a protective layer that enhances shine, repels water, and guards against scratches, UV rays,
-                and harsh weather.Ceramic coating is a liquid polymer applied to the exterior of your vehicle. It
-                chemically bonds with
-                your car's paint,
-                creating a protective layer that enhances shine, repels water, and guards against scratches, UV rays,
-                and harsh weather.Ceramic coating is a liquid polymer applied to the exterior of your vehicle. It
-                chemically bonds with
-                your car's paint,
-                creating a protective layer that enhances shine, repels water, and guards against scratches, UV rays,
-                and harsh weather.Ceramic coating is a liquid polymer applied to the exterior of your vehicle. It
-                chemically bonds with
-                your car's paint,
-                creating a protective layer that enhances shine, repels water, and guards against scratches, UV rays,
-                and harsh weather.
-            </p>
-        </div>
-    </section>
-
-    <!-- Benefits -->
-    <section class="relative py-56 px-6 md:px-16 overflow-hidden">
-
-        <!-- Video Background -->
-        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
-            <source src="./Media/bmw.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-        <!-- Dark Overlay -->
-        <div class="absolute inset-0 bg-black/60"></div>
-
-        <!-- Content -->
-        <div class="relative z-10">
-            <h2 class="text-3xl font-bold text-center text-yellow-400 mb-10">Benefits</h2>
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-                <div class="p-6 bg-gray-800/80 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold">Long-lasting Protection</h3>
-                    <p class="text-gray-300 mt-2">Keeps your car protected for up to 2-5 years.</p>
-                </div>
-                <div class="p-6 bg-gray-800/80 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold">UV & Weather Resistant</h3>
-                    <p class="text-gray-300 mt-2">Prevents fading and damage from the sun and rain.</p>
-                </div>
-                <div class="p-6 bg-gray-800/80 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold">Mirror-like Shine</h3>
-                    <p class="text-gray-300 mt-2">Gives your car a glossy, showroom finish.</p>
-                </div>
-                <div class="p-6 bg-gray-800/80 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold">Easier Cleaning</h3>
-                    <p class="text-gray-300 mt-2">Dirt and grime wash off effortlessly.</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
+</header>
 
 
-    <!-- Before & After -->
-    <section class="py-16 px-6 md:px-16 text-center">
-        <h2 class="text-3xl font-bold text-yellow-400 mb-8">Before & After</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-                <img src="img/before.jpg" alt="Before Coating" class="rounded-lg shadow-lg">
-                <p class="mt-2 text-gray-400">Before</p>
-            </div>
-            <div>
-                <img src="img/after.jpg" alt="After Coating" class="rounded-lg shadow-lg">
-                <p class="mt-2 text-gray-400">After</p>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="h-[90vh] bg-cover bg-center flex flex-col justify-center items-center text-center relative"
+    style="background-image: url('https://wallpaperaccess.com/full/3580672.jpg');">
 
-    <!-- Process Steps -->
-    <section class="bg-gray-900 py-16 px-6 md:px-16">
-        <h2 class="text-3xl font-bold text-center text-yellow-400 mb-10">Our Process</h2>
-        <ol class="space-y-6 text-gray-300">
-            <li><span class="text-yellow-400 font-bold">1.</span> Wash & Decontamination</li>
-            <li><span class="text-yellow-400 font-bold">2.</span> Paint Correction</li>
-            <li><span class="text-yellow-400 font-bold">3.</span> Coating Application</li>
-            <li><span class="text-yellow-400 font-bold">4.</span> Final Inspection</li>
-        </ol>
-    </section>
-
-    <!-- Pricing -->
-    <section id="booking" class="py-16 px-6 md:px-16 text-center">
-        <h2 class="text-3xl font-bold text-yellow-400 mb-6">Ceramic Coating Package</h2>
-        <div class="bg-gray-800 p-8 rounded-lg inline-block shadow-lg">
-            <h3 class="text-2xl font-semibold mb-2">Full Car Ceramic Coating</h3>
-            <p class="text-gray-400 mb-4">Starting at ₹12,999</p>
-            <a href="#" class="px-6 py-3 bg-yellow-400 text-black rounded-full font-semibold hover:bg-yellow-500">Book
-                Now</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-black py-6 text-center border-t border-gray-800 text-gray-500">
-        &copy; 2025 Car Detailing. All rights reserved.
-    </footer>
+    <div class="relative z-10">
+      <h1 class="text-4xl md:text-6xl font-extrabold">Premium Ceramic Coating</h1>
+      <p class="mt-4 text-lg md:text-xl">Protect Your Car's Shine for Years</p>
+      <a href="#booking"
+        class="mt-6 inline-block px-8 py-4 bg-yellow-400 text-black rounded-full font-bold hover:bg-yellow-500 transition">Book
+        Now</a>
+    </div>
+  </section>
 
 </body>
 
