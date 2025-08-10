@@ -19,52 +19,54 @@
 
 <body>
 
-    <!-- Navbar (exactly your original HTML) -->
-    <header class="fixed top-0 left-0 w-full z-50">
+    <!-- Navbar -->
+    <header class="bg-gray-900 text-gray-900 fixed z-50"
+        style="width:100%;background-color:rgba(250, 246, 246, 0.616)">
         <input type="checkbox" id="menu-toggle" class="hidden peer">
-        <div class="md:mx-20 flex md:justify-center items-center h-30">
-
+        <div class="md:mx-20 flex md:justify-center items-center ">
             <!-- Hamburger Menu (Mobile) -->
+
             <label for="menu-toggle" class="cursor-pointer sm:hidden">
                 <i class="fas fa-bars text-xl ml-5"></i>
             </label>
 
             <!-- Logo -->
             <div class="logo md:mr-10 shrink-0 md:ml-0 ml-25">
-                <img src="./media/logo2-removebg-preview.png" alt="Logo" class="h-20 w-auto object-contain"
-                    style="filter: contrast(150%);">
+                <img src="./media/logo2-removebg-preview.png" alt="Logo" class=" w-auto"
+                    style="filter: contrast(150%); height:130px">
             </div>
 
             <!-- Menu Links desktop -->
             <nav class="flex hidden md:flex">
-                <div class="contents text-gray-950 space-x-6">
-                    <a href="#" class="active">HOME</a>
-                    <a href="#">PACKAGES</a>
-                    <a href="#">CERAMIC COATINGS</a>
-                    <a href="#">EXTERIOR DETAILING</a>
-                    <a href="#">GALLERY</a>
-                    <a href="#">CONTACT US</a>
+                <div class="contents text-gray-950 ">
+                    <a href="#" class="">HOME</a>
+                    <a href="#" class="">PACKAGES</a>
+                    <a href="#" class="">CERAMIC COATINGS</a>
+                    <a href="#" class="active">EXTERIOR DETAILING</a>
+                    <a href="#" class="">GALLERY</a>
+                    <a href="#" class="">CONTACT US</a>
                 </div>
                 <!-- Social Icons -->
-                <div class="social text-2xl text-gray-900 ml-10">
+                <div class="social text-2xl text-gray-900 ml-20 ">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </nav>
-        </div>
 
+        </div>
         <!-- Menu Links mobile -->
-        <nav class="mobile_nav hidden peer-checked:flex flex-col bg-white">
-            <div class="contents text-gray-950 gap-5 p-5">
-                <a href="#" class="active">HOME</a>
-                <a href="#">PACKAGES</a>
-                <a href="#">CERAMIC COATINGS</a>
-                <a href="#">EXTERIOR DETAILING</a>
-                <a href="#">GALLERY</a>
-                <a href="#">CONTACT US</a>
+        <nav class="mobile_nav hidden peer-checked:flex  flex-col">
+            <div class="contents text-gray-950 gap-10">
+                <a href="#" class="">HOME</a>
+                <a href="#" class="">PACKAGES</a>
+                <a href="#" class="">CERAMIC COATINGS</a>
+                <a href="#" class="active">EXTERIOR DETAILING</a>
+                <a href="#" class="">GALLERY</a>
+                <a href="#" class="">CONTACT US</a>
             </div>
-            <div class="social text-2xl text-gray-900 ml-5 my-5">
+            <!-- Social Icons -->
+            <div class="social text-2xl text-gray-900 ml-30 my-5 ">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
@@ -76,29 +78,28 @@
     <!-- Hero Section -->
     <section class="relative h-[90vh] flex flex-col justify-center items-center text-center px-4 overflow-hidden">
 
-    <!-- Full-screen Image -->
-    <img src="https://wallpaperaccess.com/full/3580672.jpg" 
-         alt="Premium Ceramic Coating" 
-         class="absolute inset-0 w-full h-full object-cover z-0">
+        <!-- Full-screen Image -->
+        <img src="https://wallpaperaccess.com/full/3580672.jpg" alt="Premium Ceramic Coating"
+            class="absolute inset-0 w-full h-full object-cover z-0">
 
-    <!-- Dark overlay -->
-    <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+        <!-- Dark overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
-    <!-- Content -->
-    <div class="relative z-10 text-white max-w-3xl mt-20">
-        <h1 class="text-3xl sm:text-5xl md:text-5xl font-extrabold">
-            Premium Ceramic Coating
-        </h1>
-        <p class="mt-6 text-base sm:text-lg md:text-xl leading-relaxed">
-            Protect Your Car's Shine for Years
-        </p>
-        <a href="#booking"
-            class="mt-8 inline-block px-6 sm:px-8 py-3 sm:py-4 text-white rounded-full font-bold hover:bg-blue-900 transition duration-300">
-            Book Now
-        </a>
-    </div>
+        <!-- Content -->
+        <div class="relative z-10 text-white max-w-3xl mt-20">
+            <h1 class="text-3xl sm:text-5xl md:text-5xl font-extrabold">
+                Premium Ceramic Coating
+            </h1>
+            <p class="mt-6 text-base sm:text-lg md:text-xl leading-relaxed">
+                Protect Your Car's Shine for Years
+            </p>
+            <a href="#booking"
+                class="mt-8 inline-block px-6 sm:px-8 py-3 sm:py-4 text-white rounded-full font-bold hover:bg-blue-900 transition duration-300">
+                Book Now
+            </a>
+        </div>
 
-</section>
+    </section>
 
     <!-- about -->
     <section class="w-full flex flex-col md:flex-row">
