@@ -1,4 +1,4 @@
-/* header----------------------------- */
+/* header------------------------------------------------------------- */
 
 /* Navbar link style */
 .contents a {
@@ -23,6 +23,8 @@ header {
   /* Safari support */
   border: 1px solid rgba(255, 255, 255, 0);
   /* light border */
+
+  z-index: 100;
 }
 
 /* Text color change on hover */
@@ -90,7 +92,7 @@ header {
 
 
 
-/* main Section------------------------------ */
+/* main Section----------------------------------------------------------- */
 
 
 .main_bg {
@@ -164,4 +166,39 @@ header {
 
 .about p{
   color: #212b4b;
+  
+}
+
+
+/* services----------------------------------------------------------------- */
+
+.services h1{
+  font-size: 45px;
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  color: #212b4b;
+  font-style: normal;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.services span{
+  color: #3b5dc3;
+}
+
+
+/* works--------------------------------------------------------------------- */
+
+.headh1{
+  font-size: 45px;
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  color: #212b4b;
+  font-style: normal;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.headspan{
+  color: #3b5dc3;
 }
