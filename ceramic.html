@@ -2,35 +2,53 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ceramic Coating</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceramic Coating</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="ceramic.css">
 </head>
 
 <body>
 
-  <!-- Navbar (exactly your original HTML) -->
-<header class="fixed top-0 left-0 w-full z-50">
-    <input type="checkbox" id="menu-toggle" class="hidden peer">
-    <div class="md:mx-20 flex md:justify-center items-center h-30">
-        
-        <!-- Hamburger Menu (Mobile) -->
-        <label for="menu-toggle" class="cursor-pointer sm:hidden">
-            <i class="fas fa-bars text-xl ml-5"></i>
-        </label>
+    <!-- Navbar (exactly your original HTML) -->
+    <header class="fixed top-0 left-0 w-full z-50">
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+        <div class="md:mx-20 flex md:justify-center items-center h-30">
 
-        <!-- Logo -->
-        <div class="logo md:mr-10 shrink-0 md:ml-0 ml-25">
-            <img src="./media/logo2-removebg-preview.png" alt="Logo" 
-                 class="h-20 w-auto object-contain"
-                 style="filter: contrast(150%);">
+            <!-- Hamburger Menu (Mobile) -->
+            <label for="menu-toggle" class="cursor-pointer sm:hidden">
+                <i class="fas fa-bars text-xl ml-5"></i>
+            </label>
+
+            <!-- Logo -->
+            <div class="logo md:mr-10 shrink-0 md:ml-0 ml-25">
+                <img src="./media/logo2-removebg-preview.png" alt="Logo" class="h-20 w-auto object-contain"
+                    style="filter: contrast(150%);">
+            </div>
+
+            <!-- Menu Links desktop -->
+            <nav class="flex hidden md:flex">
+                <div class="contents text-gray-950 space-x-6">
+                    <a href="#" class="active">HOME</a>
+                    <a href="#">PACKAGES</a>
+                    <a href="#">CERAMIC COATINGS</a>
+                    <a href="#">EXTERIOR DETAILING</a>
+                    <a href="#">GALLERY</a>
+                    <a href="#">CONTACT US</a>
+                </div>
+                <!-- Social Icons -->
+                <div class="social text-2xl text-gray-900 ml-10">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </nav>
         </div>
 
-        <!-- Menu Links desktop -->
-        <nav class="flex hidden md:flex">
-            <div class="contents text-gray-950 space-x-6">
+        <!-- Menu Links mobile -->
+        <nav class="mobile_nav hidden peer-checked:flex flex-col bg-white">
+            <div class="contents text-gray-950 gap-5 p-5">
                 <a href="#" class="active">HOME</a>
                 <a href="#">PACKAGES</a>
                 <a href="#">CERAMIC COATINGS</a>
@@ -38,46 +56,70 @@
                 <a href="#">GALLERY</a>
                 <a href="#">CONTACT US</a>
             </div>
-            <!-- Social Icons -->
-            <div class="social text-2xl text-gray-900 ml-10">
+            <div class="social text-2xl text-gray-900 ml-5 my-5">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
         </nav>
-    </div>
+    </header>
 
-    <!-- Menu Links mobile -->
-    <nav class="mobile_nav hidden peer-checked:flex flex-col bg-white">
-        <div class="contents text-gray-950 gap-5 p-5">
-            <a href="#" class="active">HOME</a>
-            <a href="#">PACKAGES</a>
-            <a href="#">CERAMIC COATINGS</a>
-            <a href="#">EXTERIOR DETAILING</a>
-            <a href="#">GALLERY</a>
-            <a href="#">CONTACT US</a>
+
+    <!-- Hero Section -->
+    <section class="h-[90vh] bg-cover bg-center flex flex-col justify-center items-center text-center relative px-4"
+        style="background-image: url('https://wallpaperaccess.com/full/3580672.jpg');">
+
+        <!-- Dark overlay for text visibility -->
+        <div class="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+
+        <!-- Content -->
+        <div class="head relative z-10 text-white max-w-3xl mt-20">
+            <h1 class="text-3xl sm:text-5xl md:text-5xl font-extrabold">
+                Premium Ceramic Coating
+            </h1>
+            <p class="mt-6 text-base sm:text-lg md:text-xl leading-relaxed">
+                Protect Your Car's Shine for Years
+            </p>
+            <a href="#booking"
+                class="mt-8 inline-block px-6 sm:px-8 py-3 sm:py-4  text-white rounded-full font-bold hover:bg-blue-900 transition duration-300">
+                Book Now
+            </a>
         </div>
-        <div class="social text-2xl text-gray-900 ml-5 my-5">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+    </section>
+
+    <!-- about -->
+    <section class="w-full flex flex-col md:flex-row">
+        <!-- Left: Image -->
+        <div class="w-full md:w-1/2 bg-white">
+            <img src="https://getwallpapers.com/wallpaper/full/6/d/0/171385.jpg" alt="Ceramic Coating Application"
+                class="w-full h-full object-cover">
         </div>
-    </nav>
-</header>
 
 
-  <!-- Hero Section -->
-  <section class="h-[90vh] bg-cover bg-center flex flex-col justify-center items-center text-center relative"
-    style="background-image: url('https://wallpaperaccess.com/full/3580672.jpg');">
+        <!-- Right: Content -->
+        <div class="abtdiv w-full md:w-1/2 text-white flex flex-col justify-center p-8 md:p-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-6">
+                What is Ceramic Coating?
+            </h2>
+            <p class="text-lg md:text-large leading-relaxed mb-6">
+                Ceramic coating is a liquid polymer applied to the exterior of your vehicle.
+                It chemically bonds with the factory paint, forming a durable layer of protection
+                against UV rays, dirt, water spots, and minor scratches. Unlike wax, it lasts
+                for years while keeping your car looking glossy and new.
+                Ceramic coating is a liquid polymer applied to the exterior of your vehicle.
+                It chemically bonds with the factory paint, forming a durable layer of protection
+                against UV rays, dirt, water spots, and minor scratches. Unlike wax, it lasts
+                for years while keeping your car looking glossy and new.
+                Ceramic coating is a liquid polymer applied to the exterior of your vehicle.
+                It chemically bonds with the factory paint, forming a durable layer of protection
+                against UV rays, dirt, water spots, and minor scratches. Unlike wax, it lasts
+                for years while keeping your car looking glossy and new.
+            </p>
+        </div>
+    </section>
 
-    <div class="relative z-10">
-      <h1 class="text-4xl md:text-6xl font-extrabold">Premium Ceramic Coating</h1>
-      <p class="mt-4 text-lg md:text-xl">Protect Your Car's Shine for Years</p>
-      <a href="#booking"
-        class="mt-6 inline-block px-8 py-4 bg-yellow-400 text-black rounded-full font-bold hover:bg-yellow-500 transition">Book
-        Now</a>
-    </div>
-  </section>
+
+
 
 </body>
 

@@ -1,0 +1,93 @@
+
+/* Navbar link style */
+.contents a {
+  margin-left: 10px;
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+
+header {
+  background-color: rgba(254, 254, 254, 0.871);
+  /* transparent white */
+  backdrop-filter: blur(10px);
+  /* blur behind element */
+  -webkit-backdrop-filter: blur(90px);
+  /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0);
+  /* light border */
+
+  z-index: 100;
+}
+
+/* Text color change on hover */
+.contents a:hover {
+  color: #d5ad0c;
+}
+
+.contents a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: #facc15;
+  transition: width 0.3s ease-in-out;
+}
+
+
+.contents a.active::after {
+  width: 100%;
+}
+
+.contents a:hover::after {
+  width: 100%;
+}
+
+/* Social icons hover */
+.social i {
+  margin-left: 20px;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.social i:hover {
+  color: #facc15;
+  transform: scale(1.1);
+}
+
+
+/* mobile navbar */
+
+/* media screen */
+
+@media (max-width:600px) {
+
+  .contents a {
+    margin-bottom: 20px;
+  }
+
+  .contents .active {
+    color: #facc15;
+  }
+
+
+}
+
+@media (min-width:600px) {
+
+  .mobile_nav {
+    display: none;
+  }
+
+}
+
+.abtdiv{
+
+    background-color:  #2e3c67; 
+}
