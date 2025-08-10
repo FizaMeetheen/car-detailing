@@ -2,404 +2,451 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./media/ChatGPT Image Aug 9, 2025, 12_20_49 PM.png" type="image/x-icon">
-    <title>Autocoste</title>
-    <link rel="stylesheet" href="home.css">
-    <!-- TAilwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Autour+One&family=Black+Han+Sans&family=Borel&family=Bungee+Spice&family=Cabin+Sketch:wght@400;700&family=Carattere&family=Chicle&family=Commissioner:wght@100..900&family=Delius+Unicase:wght@400;700&family=Diphylleia&family=Dokdo&family=Erica+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Grenze+Gotisch:wght@100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Lexend+Exa:wght@100..900&family=M+PLUS+1p&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Spray+Paint&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=ZCOOL+QingKe+HuangYou&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./media/ChatGPT Image Aug 9, 2025, 12_20_49 PM.png" type="image/x-icon">
+  <title>Autocoste</title>
+  <link rel="stylesheet" href="home.css">
+  <!-- TAilwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Autour+One&family=Black+Han+Sans&family=Borel&family=Bungee+Spice&family=Cabin+Sketch:wght@400;700&family=Carattere&family=Chicle&family=Commissioner:wght@100..900&family=Delius+Unicase:wght@400;700&family=Diphylleia&family=Dokdo&family=Erica+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Grenze+Gotisch:wght@100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Lexend+Exa:wght@100..900&family=M+PLUS+1p&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Spray+Paint&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=ZCOOL+QingKe+HuangYou&display=swap"
+    rel="stylesheet">
 
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <header class="bg-gray-900 text-gray-900 fixed" style="width:100%;background-color:rgba(0, 0, 0, 0)">
-        <input type="checkbox" id="menu-toggle" class="hidden peer">
-        <div class="md:mx-20 flex md:justify-center items-center ">
-            <!-- Hamburger Menu (Mobile) -->
+  <!-- Navbar -->
+  <header class="bg-gray-900 text-gray-900 fixed" style="width:100%;background-color:rgba(0, 0, 0, 0)">
+    <input type="checkbox" id="menu-toggle" class="hidden peer">
+    <div class="md:mx-20 flex md:justify-center items-center ">
+      <!-- Hamburger Menu (Mobile) -->
 
-            <label for="menu-toggle" class="cursor-pointer sm:hidden">
-                <i class="fas fa-bars text-xl ml-5"></i>
-            </label>
+      <label for="menu-toggle" class="cursor-pointer sm:hidden">
+        <i class="fas fa-bars text-xl ml-5"></i>
+      </label>
 
-            <!-- Logo -->
-            <div class="logo md:mr-10 shrink-0 md:ml-0 ml-25">
-                <img src="./media/logo2-removebg-preview.png" alt="Logo" class="h-30 w-auto"
-                    style="filter: contrast(150%);">
-            </div>
-
-            <!-- Menu Links desktop -->
-            <nav class="flex hidden md:flex">
-                <div class="contents text-gray-950 ">
-                    <a href="#" class="active">HOME</a>
-                    <a href="#" class="">PACKAGES</a>
-                    <a href="#" class="">CERAMIC COATINGS</a>
-                    <a href="#" class="">EXTERIOR DETAILING</a>
-                    <a href="#" class="">GALLERY</a>
-                    <a href="#" class="">CONTACT US</a>
-                </div>
-                <!-- Social Icons -->
-                <div class="social text-2xl text-gray-900 ml-20 ">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </nav>
-        </div>
-        <!-- Menu Links mobile -->
-        <nav class="mobile_nav hidden peer-checked:flex  flex-col">
-            <div class="contents text-gray-950 gap-10">
-                <a href="#" class="active">HOME</a>
-                <a href="#" class="">PACKAGES</a>
-                <a href="#" class="">CERAMIC COATINGS</a>
-                <a href="#" class="">EXTERIOR DETAILING</a>
-                <a href="#" class="">GALLERY</a>
-                <a href="#" class="">CONTACT US</a>
-            </div>
-            <!-- Social Icons -->
-            <div class="social text-2xl text-gray-900 ml-30 my-5 ">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </nav>
-    </header>
-
-    <section class="about ">
-        <div class="main_bg">
-            <h1 class=" pl-1">MAKE YOUR CAR LOOK <br> BETTER THAN NEW</h1>
-            <p>Correct • protect • drive</p>
-            <button
-                class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition duration-300">
-                View Packages
-            </button>
-
-        </div>
-        <div class="about text-center mt-7">
-            <h4 class="mt-11">BEST CAR DETAILING, CERAMIC COATING AND PAINT PROTECTION FILM (PPF) AVAILABLE IN KOCHI
-            </h4>
-            <h1 class="mt-5">GLOBAL LEADER IN NANOCERAMIC COATINGS AND FILMS</h1>
-
-            <p class="md:px-35 mt-6"><b>Autocoste </b>is the global leader in nanoceramic surface protection. We offer a
-                range
-                of ceramic coating and paint protection film products each formulated for specific surfaces. Our ceramic
-                coatings and PPF are designed for automotive, marine, aviation and industrial applications. The coating
-                formulas are molecularly designed for surfaces such as paint, vinyl, polymers, glass and more. Ceramic
-                Pro coatings bond to surfaces at a molecular level, filling in any nano-pores and creating a hydrophobic
-                surface that is impervious to contamination. Naturally, our KAVACA PPF comes pre-coated with our
-                flagship ceramic coating. This makes our products ideal for critical applications across all industries.
-                No other surface protection products perform quite like this.</p>
-        </div>
-        <div class="about_image flex items-center justify-center mt-9  ">
-            <img src="./media/about.png" alt="" width="1350px" class="md:block hidden" style="filter: contrast(110%);">
-            <div>
-                <img src="./media/about - Copy.png" alt="" class="md:hidden">
-                <img src="./media/about - Copy (2).png" alt="" class="md:hidden">
-            </div>
-        </div>
-    </section>
-
-    <section class="services bg-gray-100 ">
-        <div class="flex flex-col justify-center items-center pt-20 pb-8">
-            <p>DISCOVER UNMATCHED LUXURY & PROTECTION FOR YOUR VEHICLE.</p>
-            <h1>Services We <span> Offer</span></h1>
-        </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-6xl mx-auto mt-10 pb-25">
-
-            <!-- Service Card Template -->
-            <div
-                class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
-                <div class="h-18 transition-transform duration-500 ease-in-out transform hover:scale-110">
-                    <img src="./Media/service1-removebg-preview.png" alt="Car Wash" class="h-16 mb-3 object-contain">
-                </div>
-                <h3 class="font-bold text-xl mb-1">01</h3>
-                <p class="font-medium text-center">High Quality Car Wash</p>
-            </div>
-
-            <div
-                class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
-                <div class="h-18 transition-transform duration-500 ease-in-out transform hover:scale-110">
-                    <img src="./Media/service2-removebg-preview.png" alt="Interior Cleaning"
-                        class="h-18 mb-3 object-contain">
-                </div>
-                <h3 class="font-bold text-xl mb-1">02</h3>
-                <p class="font-medium text-center">Interior Cleaning & Conditioning</p>
-            </div>
-
-            <div
-                class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
-                <div class="h-18 transition-transform duration-500 ease-in-out transform hover:scale-110">
-                    <img src="./Media/service3-removebg-preview.png" alt="Paint Correction"
-                        class="h-18 mb-3 object-contain overflow-hidden">
-                </div>
-                <h3 class="font-bold text-xl mb-1">03</h3>
-                <p class="font-medium text-center">Paint Correction</p>
-            </div>
-
-            <div
-                class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
-                <div class="h-18 transition-transform duration-500 ease-in-out transform hover:scale-110">
-                    <img src="./Media/service4-removebg-preview.png" alt="Nano Polishing"
-                        class="h-18 mb-3 object-contain">
-                </div>
-                <h3 class="font-bold text-xl mb-1">04</h3>
-                <p class="font-medium text-center">Nano Polishing</p>
-            </div>
-
-            <div
-                class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
-                <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
-                    <img src="./Media/service5-removebg-preview.png" alt="Ceramic Coating"
-                        class="h-16 mb-3 object-contain">
-                </div>
-                <h3 class="font-bold text-xl mb-1">05</h3>
-                <p class="font-medium text-center">Ceramic Coating</p>
-            </div>
-
-            <div
-                class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
-                <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
-                    <img src="./Media/ppf.png" alt="PPF" class="h-16 mb-3 object-contain">
-                </div>
-                <h3 class="font-bold text-xl mb-1">06</h3>
-                <p class="font-medium text-center">Paint Protection Film - PPF</p>
-            </div>
-
-            <div
-                class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
-                <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
-                    <img src="./Media/hcf.png" alt="Heat Control Film" class="h-16 mb-3 object-contain">
-                </div>
-                <h3 class="font-bold text-xl mb-1">07</h3>
-                <p class="font-medium text-center">Heat Control Film - HCF</p>
-            </div>
-
-            <div
-                class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
-                <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
-                    <img src="./Media/carpaint.png" alt="Painting Works" class="h-16 mb-3 object-contain">
-                </div>
-                <h3 class="font-bold text-xl mb-1">08</h3>
-                <p class="font-medium text-center">Painting Works</p>
-            </div>
-
-            <div
-                class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
-                <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
-                    <img src="./Media/wrapping.png" alt="Car Wrapping" class="h-16 mb-3 object-contain">
-                </div>
-                <h3 class="font-bold text-xl mb-1">09</h3>
-                <p class="font-medium text-center">Car Wrapping</p>
-            </div>
-
-            <div
-                class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
-                <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
-                    <img src="./Media/custom.png" alt="Customisation Work" class="h-16 mb-3 object-contain">
-                </div>
-                <h3 class="font-bold text-xl mb-1">10</h3>
-                <p class="font-medium text-center">Customisation Work</p>
-            </div>
-
-        </div>
-    </section>
-
-
-
-    <section class=" works max-w-6xl mx-auto px-4 py-10">
-        <!-- heading -->
-        <div class="flex flex-col justify-center items-center pt-10 pb-12">
-            <p>Transform Your Vehicle with Professional Detailing, Ceramic Coating & PPF</p>
-            <h1 class="headh1">Latest <span class="headspan">Gallery</span></h1>
-        </div>
-
-        <!-- Image Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
-            <!-- First 10 Images--Always Visible -->
-            <template id="first-images">
-                <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105">
-                    <img src="" class="w-full h-full object-cover" />
-                </div>
-            </template>
-            <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
-                    src="./media/gal1.jpg" /></div>
-            <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
-                    src="./media/gal2.jpg" style="height: 100%;object-fit:cover;object-position:center" /></div>
-            <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
-                    src="./media/gal3.jpg" /></div>
-            <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
-                    src="./media/gal4.jpg" /></div>
-            <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
-                    src="./media/gal5.jpg" style="height: 100%;object-fit:cover;object-position:center" /></div>
-            <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
-                    src="./media/gal6.jpg" /></div>
-            <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
-                    src="./media/gal7.jpg" /></div>
-            <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
-                    src="./media/gal8.jpg" /></div>
-            <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
-                    src="./media/gal9.jpg" style="height: 100%;object-fit:cover;object-position:center" /></div>
-            <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
-                    src="./media/gal10.jpg" style="height: 100%;object-fit:cover;object-position:center" /></div>
-
-            <!-- Last 5 Images - will be Hidden -->
-            <input type="checkbox" id="load-more" class="hidden peer" />
-            <div
-                class="overflow-hidden rounded-lg shadow-md transition-all duration-700 ease-in-out max-h-0 opacity-0 scale-95 peer-checked:max-h-96 peer-checked:opacity-100 peer-checked:scale-100  shadow-md transition-transform duration-500 hover:scale-105">
-                <img src="./media/gal11.jpg" class="w-full h-full object-cover" />
-            </div>
-            <div
-                class="overflow-hidden rounded-lg shadow-md transition-all duration-700 ease-in-out max-h-0 opacity-0 scale-95 peer-checked:max-h-96 peer-checked:opacity-100 peer-checked:scale-100  shadow-md transition-transform duration-500 hover:scale-105">
-                <img src="./media/gal12.jpg" class="w-full h-full object-cover" />
-            </div>
-            <div
-                class="overflow-hidden rounded-lg shadow-md transition-all duration-700 ease-in-out max-h-0 opacity-0 scale-95 peer-checked:max-h-96 peer-checked:opacity-100 peer-checked:scale-100  shadow-md transition-transform duration-500 hover:scale-105">
-                <img src="./media/gal13.jpg" class="w-full h-full object-cover" />
-            </div>
-            <div
-                class="overflow-hidden rounded-lg shadow-md transition-all duration-700 ease-in-out max-h-0 opacity-0 scale-95 peer-checked:max-h-96 peer-checked:opacity-100 peer-checked:scale-100  shadow-md transition-transform duration-500 hover:scale-105">
-                <img src="./media/gal14.jpg" class="w-full h-full object-cover" />
-            </div>
-            <div
-                class="overflow-hidden rounded-lg shadow-md transition-all duration-700 ease-in-out max-h-0 opacity-0 scale-95 peer-checked:max-h-96 peer-checked:opacity-100 peer-checked:scale-100  shadow-md transition-transform duration-500 hover:scale-105">
-                <img src="./media/gal15.jpg" class="w-full h-full object-cover" />
-            </div>
-        </div>
-        <!-- Load More Button -->
-        <div class="text-center mt-6">
-
-            <label for="load-more"
-                class="cursor-pointer bg-sky-900 text-white px-6 py-2 rounded-full hover:bg-sky-700 transition">
-                <input type="checkbox" id="load-more" class="hidden peer" />
-                <span class="peer-checked">Load More</span>
-                <span class="hidden peer-checked:inline">Show Less</span>
-
-            </label>
-        </div>
-
-
-    </section>
-
-    <section class="bg-gray-100 py-10">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
-
-    <div 
-      class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth"
-      style="scroll-behavior: smooth; scroll-snap-type: x mandatory; scroll-padding: 0;"
-    >
-      <!-- Testimonial Card 1 -->
-      <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
-        <p class="text-gray-600 mb-4">"Absolutely top-notch service! My car looks brand new after the ceramic coating."</p>
-        <div class="flex items-center">
-          <img src="./media/user1.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
-          <div>
-            <h4 class="font-semibold">John Doe</h4>
-            <span class="text-sm text-gray-500">BMW Owner</span>
-          </div>
-        </div>
+      <!-- Logo -->
+      <div class="logo md:mr-10 shrink-0 md:ml-0 ml-25">
+        <img src="./media/logo2-removebg-preview.png" alt="Logo" class="h-30 w-auto" style="filter: contrast(150%);">
       </div>
 
-      <!-- Testimonial Card 2 -->
-      <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
-        <p class="text-gray-600 mb-4">"Excellent paint protection film! Highly recommended to all car lovers."</p>
-        <div class="flex items-center">
-          <img src="./media/user2.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
-          <div>
-            <h4 class="font-semibold">Sarah Lee</h4>
-            <span class="text-sm text-gray-500">Audi Owner</span>
-          </div>
+      <!-- Menu Links desktop -->
+      <nav class="flex hidden md:flex">
+        <div class="contents text-gray-950 ">
+          <a href="home.html" class="">HOME</a>
+          <a href="package.html" class="">PACKAGES</a>
+          <a href="ceramic.html" class="">CERAMIC COATINGS</a>
+          <a href="ed.html" class="active">EXTERIOR DETAILING</a>
+          <a href="#" class="">GALLERY</a>
+          <a href="contact.html" class="">CONTACT US</a>
         </div>
-      </div>
-
-      <!-- Testimonial Card 3 -->
-      <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
-        <p class="text-gray-600 mb-4">"They handled my car with such care. The results speak for themselves."</p>
-        <div class="flex items-center">
-          <img src="./media/user3.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
-          <div>
-            <h4 class="font-semibold">Michael Chen</h4>
-            <span class="text-sm text-gray-500">Tesla Owner</span>
-          </div>
+        <!-- Social Icons -->
+        <div class="social text-2xl text-gray-900 ml-20 ">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
-      </div>
-
-      <!-- Testimonial Card 3 -->
-      <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
-        <p class="text-gray-600 mb-4">"They handled my car with such care. The results speak for themselves."</p>
-        <div class="flex items-center">
-          <img src="./media/user3.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
-          <div>
-            <h4 class="font-semibold">Michael Chen</h4>
-            <span class="text-sm text-gray-500">Tesla Owner</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testimonial Card 3 -->
-      <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
-        <p class="text-gray-600 mb-4">"They handled my car with such care. The results speak for themselves."</p>
-        <div class="flex items-center">
-          <img src="./media/user3.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
-          <div>
-            <h4 class="font-semibold">Michael Chen</h4>
-            <span class="text-sm text-gray-500">Tesla Owner</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Testimonial Card 3 -->
-      <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
-        <p class="text-gray-600 mb-4">"They handled my car with such care. The results speak for themselves."</p>
-        <div class="flex items-center">
-          <img src="./media/user3.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
-          <div>
-            <h4 class="font-semibold">Michael Chen</h4>
-            <span class="text-sm text-gray-500">Tesla Owner</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Add up to 6 cards -->
+      </nav>
     </div>
-  </div>
-</section>
+    <!-- Menu Links mobile -->
+    <nav class="mobile_nav hidden peer-checked:flex  flex-col">
+      <div class="contents text-gray-950 gap-10">
+        <a href="home.html" class="">HOME</a>
+        <a href="package.html" class="">PACKAGES</a>
+        <a href="ceramic.html" class="">CERAMIC COATINGS</a>
+        <a href="ed.html" class="active">EXTERIOR DETAILING</a>
+        <a href="#" class="">GALLERY</a>
+        <a href="contact.html" class="">CONTACT US</a>
+      </div>
+      <!-- Social Icons -->
+      <div class="social text-2xl text-gray-900 ml-30 my-5 ">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </nav>
+  </header>
 
-<!-- Hide Scrollbar -->
-<style>
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-</style>
+  <section class="about ">
+    <div class="main_bg">
+      <h1 class=" pl-1">MAKE YOUR CAR LOOK <br> BETTER THAN NEW</h1>
+      <p>Correct • protect • drive</p>
+      <button
+        class="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 transition duration-300">
+        View Packages
+      </button>
 
-<!-- Optional scrollbar hide style -->
-<style>
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-</style>
+    </div>
+    <div class="about text-center mt-7">
+      <h4 class="mt-11">BEST CAR DETAILING, CERAMIC COATING AND PAINT PROTECTION FILM (PPF) AVAILABLE IN KOCHI
+      </h4>
+      <h1 class="mt-5">GLOBAL LEADER IN NANOCERAMIC COATINGS AND FILMS</h1>
 
-    </section>
+      <p class="md:px-35 mt-6"><b>Autocoste </b>is the global leader in nanoceramic surface protection. We offer a
+        range
+        of ceramic coating and paint protection film products each formulated for specific surfaces. Our ceramic
+        coatings and PPF are designed for automotive, marine, aviation and industrial applications. The coating
+        formulas are molecularly designed for surfaces such as paint, vinyl, polymers, glass and more. Ceramic
+        Pro coatings bond to surfaces at a molecular level, filling in any nano-pores and creating a hydrophobic
+        surface that is impervious to contamination. Naturally, our KAVACA PPF comes pre-coated with our
+        flagship ceramic coating. This makes our products ideal for critical applications across all industries.
+        No other surface protection products perform quite like this.</p>
+    </div>
+    <div class="about_image flex items-center justify-center mt-9  ">
+      <img src="./media/about.png" alt="" width="1350px" class="md:block hidden" style="filter: contrast(110%);">
+      <div>
+        <img src="./media/about - Copy.png" alt="" class="md:hidden">
+        <img src="./media/about - Copy (2).png" alt="" class="md:hidden">
+      </div>
+    </div>
+  </section>
+
+  <section class="services bg-gray-100 ">
+    <div class="flex flex-col justify-center items-center pt-20 pb-8">
+      <p>DISCOVER UNMATCHED LUXURY & PROTECTION FOR YOUR VEHICLE.</p>
+      <h1>Services We <span> Offer</span></h1>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 max-w-6xl mx-auto mt-10 pb-25">
+
+      <!-- Service Card Template -->
+      <div
+        class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
+        <div class="h-18 transition-transform duration-500 ease-in-out transform hover:scale-110">
+          <img src="./Media/service1-removebg-preview.png" alt="Car Wash" class="h-16 mb-3 object-contain">
+        </div>
+        <h3 class="font-bold text-xl mb-1">01</h3>
+        <p class="font-medium text-center">High Quality Car Wash</p>
+      </div>
+
+      <div
+        class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
+        <div class="h-18 transition-transform duration-500 ease-in-out transform hover:scale-110">
+          <img src="./Media/service2-removebg-preview.png" alt="Interior Cleaning" class="h-18 mb-3 object-contain">
+        </div>
+        <h3 class="font-bold text-xl mb-1">02</h3>
+        <p class="font-medium text-center">Interior Cleaning & Conditioning</p>
+      </div>
+
+      <div
+        class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
+        <div class="h-18 transition-transform duration-500 ease-in-out transform hover:scale-110">
+          <img src="./Media/service3-removebg-preview.png" alt="Paint Correction"
+            class="h-18 mb-3 object-contain overflow-hidden">
+        </div>
+        <h3 class="font-bold text-xl mb-1">03</h3>
+        <p class="font-medium text-center">Paint Correction</p>
+      </div>
+
+      <div
+        class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
+        <div class="h-18 transition-transform duration-500 ease-in-out transform hover:scale-110">
+          <img src="./Media/service4-removebg-preview.png" alt="Nano Polishing" class="h-18 mb-3 object-contain">
+        </div>
+        <h3 class="font-bold text-xl mb-1">04</h3>
+        <p class="font-medium text-center">Nano Polishing</p>
+      </div>
+
+      <div
+        class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
+        <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
+          <img src="./Media/service5-removebg-preview.png" alt="Ceramic Coating" class="h-16 mb-3 object-contain">
+        </div>
+        <h3 class="font-bold text-xl mb-1">05</h3>
+        <p class="font-medium text-center">Ceramic Coating</p>
+      </div>
+
+      <div
+        class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
+        <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
+          <img src="./Media/ppf.png" alt="PPF" class="h-16 mb-3 object-contain">
+        </div>
+        <h3 class="font-bold text-xl mb-1">06</h3>
+        <p class="font-medium text-center">Paint Protection Film - PPF</p>
+      </div>
+
+      <div
+        class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
+        <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
+          <img src="./Media/hcf.png" alt="Heat Control Film" class="h-16 mb-3 object-contain">
+        </div>
+        <h3 class="font-bold text-xl mb-1">07</h3>
+        <p class="font-medium text-center">Heat Control Film - HCF</p>
+      </div>
+
+      <div
+        class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
+        <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
+          <img src="./Media/carpaint.png" alt="Painting Works" class="h-16 mb-3 object-contain">
+        </div>
+        <h3 class="font-bold text-xl mb-1">08</h3>
+        <p class="font-medium text-center">Painting Works</p>
+      </div>
+
+      <div
+        class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
+        <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
+          <img src="./Media/wrapping.png" alt="Car Wrapping" class="h-16 mb-3 object-contain">
+        </div>
+        <h3 class="font-bold text-xl mb-1">09</h3>
+        <p class="font-medium text-center">Car Wrapping</p>
+      </div>
+
+      <div
+        class="bg-white hover:bg-slate-800 hover:text-white shadow-md p-6 flex flex-col items-center justify-center transition-all duration-500 ease-in-out transform hover:scale-105 w-full h-48 cursor-pointer">
+        <div class="transition-transform duration-500 ease-in-out transform hover:scale-110">
+          <img src="./Media/custom.png" alt="Customisation Work" class="h-16 mb-3 object-contain">
+        </div>
+        <h3 class="font-bold text-xl mb-1">10</h3>
+        <p class="font-medium text-center">Customisation Work</p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class=" works max-w-6xl mx-auto px-4 py-10">
+    <!-- heading -->
+    <div class="flex flex-col justify-center items-center pt-10 pb-12">
+      <p>Transform Your Vehicle with Professional Detailing, Ceramic Coating & PPF</p>
+      <h1 class="headh1">Latest <span class="headspan">Gallery</span></h1>
+    </div>
+
+    <!-- Image Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+      <!-- First 10 Images--Always Visible -->
+      <template id="first-images">
+        <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105">
+          <img src="" class="w-full h-full object-cover" />
+        </div>
+      </template>
+      <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
+          src="./media/gal1.jpg" /></div>
+      <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
+          src="./media/gal2.jpg" style="height: 100%;object-fit:cover;object-position:center" /></div>
+      <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
+          src="./media/gal3.jpg" /></div>
+      <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
+          src="./media/gal4.jpg" /></div>
+      <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
+          src="./media/gal5.jpg" style="height: 100%;object-fit:cover;object-position:center" /></div>
+      <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
+          src="./media/gal6.jpg" /></div>
+      <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
+          src="./media/gal7.jpg" /></div>
+      <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
+          src="./media/gal8.jpg" /></div>
+      <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
+          src="./media/gal9.jpg" style="height: 100%;object-fit:cover;object-position:center" /></div>
+      <div class="overflow-hidden rounded-lg shadow-md transition-transform duration-500 hover:scale-105"><img
+          src="./media/gal10.jpg" style="height: 100%;object-fit:cover;object-position:center" /></div>
+
+      <!-- Last 5 Images - will be Hidden -->
+      <input type="checkbox" id="load-more" class="hidden peer" />
+      <div
+        class="overflow-hidden rounded-lg shadow-md transition-all duration-700 ease-in-out max-h-0 opacity-0 scale-95 peer-checked:max-h-96 peer-checked:opacity-100 peer-checked:scale-100  shadow-md transition-transform duration-500 hover:scale-105">
+        <img src="./media/gal11.jpg" class="w-full h-full object-cover" />
+      </div>
+      <div
+        class="overflow-hidden rounded-lg shadow-md transition-all duration-700 ease-in-out max-h-0 opacity-0 scale-95 peer-checked:max-h-96 peer-checked:opacity-100 peer-checked:scale-100  shadow-md transition-transform duration-500 hover:scale-105">
+        <img src="./media/gal12.jpg" class="w-full h-full object-cover" />
+      </div>
+      <div
+        class="overflow-hidden rounded-lg shadow-md transition-all duration-700 ease-in-out max-h-0 opacity-0 scale-95 peer-checked:max-h-96 peer-checked:opacity-100 peer-checked:scale-100  shadow-md transition-transform duration-500 hover:scale-105">
+        <img src="./media/gal13.jpg" class="w-full h-full object-cover" />
+      </div>
+      <div
+        class="overflow-hidden rounded-lg shadow-md transition-all duration-700 ease-in-out max-h-0 opacity-0 scale-95 peer-checked:max-h-96 peer-checked:opacity-100 peer-checked:scale-100  shadow-md transition-transform duration-500 hover:scale-105">
+        <img src="./media/gal14.jpg" class="w-full h-full object-cover" />
+      </div>
+      <div
+        class="overflow-hidden rounded-lg shadow-md transition-all duration-700 ease-in-out max-h-0 opacity-0 scale-95 peer-checked:max-h-96 peer-checked:opacity-100 peer-checked:scale-100  shadow-md transition-transform duration-500 hover:scale-105">
+        <img src="./media/gal15.jpg" class="w-full h-full object-cover" />
+      </div>
+    </div>
+    <!-- Load More Button -->
+    <div class="text-center mt-6">
+
+      <label for="load-more"
+        class="cursor-pointer bg-sky-900 text-white px-6 py-2 rounded-full hover:bg-sky-700 transition">
+        <input type="checkbox" id="load-more" class="hidden peer" />
+        <span class="peer-checked">Load More</span>
+        <span class="hidden peer-checked:inline">Show Less</span>
+
+      </label>
+    </div>
+
+
+  </section>
+
+  <section class="bg-gray-100 py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">What Our Customers Say</h2>
+
+      <div class="flex space-x-6 overflow-x-auto scrollbar-hide snap-x snap-mandatory scroll-smooth"
+        style="scroll-behavior: smooth; scroll-snap-type: x mandatory; scroll-padding: 0;">
+        <!-- Testimonial Card 1 -->
+        <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+          <p class="text-gray-600 mb-4">"Absolutely top-notch service! My car looks brand new after the ceramic
+            coating."</p>
+          <div class="flex items-center">
+            <img src="./media/user1.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
+            <div>
+              <h4 class="font-semibold">John Doe</h4>
+              <span class="text-sm text-gray-500">BMW Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 2 -->
+        <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+          <p class="text-gray-600 mb-4">"Excellent paint protection film! Highly recommended to all car lovers."</p>
+          <div class="flex items-center">
+            <img src="./media/user2.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
+            <div>
+              <h4 class="font-semibold">Sarah Lee</h4>
+              <span class="text-sm text-gray-500">Audi Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+          <p class="text-gray-600 mb-4">"They handled my car with such care. The results speak for themselves."</p>
+          <div class="flex items-center">
+            <img src="./media/user3.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
+            <div>
+              <h4 class="font-semibold">Michael Chen</h4>
+              <span class="text-sm text-gray-500">Tesla Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+          <p class="text-gray-600 mb-4">"They handled my car with such care. The results speak for themselves."</p>
+          <div class="flex items-center">
+            <img src="./media/user3.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
+            <div>
+              <h4 class="font-semibold">Michael Chen</h4>
+              <span class="text-sm text-gray-500">Tesla Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+          <p class="text-gray-600 mb-4">"They handled my car with such care. The results speak for themselves."</p>
+          <div class="flex items-center">
+            <img src="./media/user3.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
+            <div>
+              <h4 class="font-semibold">Michael Chen</h4>
+              <span class="text-sm text-gray-500">Tesla Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Card 3 -->
+        <div class="flex-shrink-0 w-80 bg-white p-6 rounded-xl shadow-md snap-start">
+          <p class="text-gray-600 mb-4">"They handled my car with such care. The results speak for themselves."</p>
+          <div class="flex items-center">
+            <img src="./media/user3.jpg" class="w-12 h-12 rounded-full object-cover mr-3">
+            <div>
+              <h4 class="font-semibold">Michael Chen</h4>
+              <span class="text-sm text-gray-500">Tesla Owner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add up to 6 cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Hide Scrollbar -->
+  <style>
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+  <!-- Optional scrollbar hide style -->
+  <style>
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+
+  </section>
+
+  <footer class="text-white py-10" style="background-color: #2e3c67;">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="#" class="hover:text-white hover:underline">Home</a></li>
+          <li><a href="#" class="hover:text-white hover:underline">Packages</a></li>
+          <li><a href="#" class="hover:text-white hover:underline">Ceramic Coatings</a></li>
+          <li><a href="#" class="hover:text-white hover:underline">Gallery</a></li>
+          <li><a href="#" class="hover:text-white hover:underline">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+        <p class="text-gray-300 text-sm">123 Shine Street, Auto City, USA</p>
+        <p class="text-gray-300 text-sm">Phone: +1 234 567 890</p>
+        <p class="text-gray-300 text-sm">Email: info@ceramicshine.com</p>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+        <div class="flex md:justify-start justify-center space-x-4 text-2xl">
+          <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="hover:text-red-500"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <!-- Opening Hours -->
+      <div>
+        <h3 class="text-lg font-semibold mb-4">Opening Hours</h3>
+        <ul class="space-y-1 text-gray-300 text-sm">
+          <li>Mon - Fri: 9:00 AM - 6:00 PM</li>
+          <li>Saturday: 10:00 AM - 4:00 PM</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+      &copy; 2025 Ceramic Shine. All rights reserved.
+    </div>
+  </footer>
 
 </body>
 
