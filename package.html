@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocoste</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="packages.css">
+    <!-- TAilwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Autour+One&family=Black+Han+Sans&family=Borel&family=Bungee+Spice&family=Cabin+Sketch:wght@400;700&family=Carattere&family=Chicle&family=Commissioner:wght@100..900&family=Delius+Unicase:wght@400;700&family=Diphylleia&family=Dokdo&family=Erica+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Grenze+Gotisch:wght@100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Lexend+Exa:wght@100..900&family=M+PLUS+1p&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Spray+Paint&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=ZCOOL+QingKe+HuangYou&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-gray-900 text-gray-900 fixed" style="width:100%;background-color:rgba(0, 0, 0, 0)">
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+        <div class="md:mx-20 flex md:justify-center items-center ">
+            <!-- Hamburger Menu (Mobile) -->
+
+            <label for="menu-toggle" class="cursor-pointer sm:hidden">
+                <i class="fas fa-bars text-xl ml-5"></i>
+            </label>
+
+            <!-- Logo -->
+            <div class="logo md:mr-10 shrink-0 md:ml-0 ml-25">
+                <img src="./Media/logo2-removebg-preview.png" alt="Logo" class="h-30 w-auto" style="filter: contrast(150%);">
+            </div>
+
+            <!-- Menu Links desktop -->
+            <nav class="flex hidden md:flex">
+                <div class="contents text-gray-950 ">
+                    <a href="#" class="active">HOME</a>
+                    <a href="#" class="">PACKAGES</a>
+                    <a href="#" class="">CERAMIC COATINGS</a>
+                    <a href="#" class="">EXTERIOR DETAILING</a>
+                    <a href="#" class="">GALLERY</a>
+                    <a href="#" class="">CONTACT US</a>
+                </div>
+                <!-- Social Icons -->
+                <div class="social text-2xl text-gray-900 ml-20 ">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </nav>
+
+        </div>
+        <!-- Menu Links mobile -->
+        <nav class="mobile_nav hidden peer-checked:flex  flex-col">
+            <div class="contents text-gray-950 gap-10">
+                <a href="#" class="active">HOME</a>
+                <a href="#" class="">PACKAGES</a>
+                <a href="#" class="">CERAMIC COATINGS</a>
+                <a href="#" class="">EXTERIOR DETAILING</a>
+                <a href="#" class="">GALLERY</a>
+                <a href="#" class="">CONTACT US</a>
+            </div>
+            <!-- Social Icons -->
+            <div class="social text-2xl text-gray-900 ml-30 my-5 ">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <div class="main">
+        <div class="packages shadow-2xl">
+            <!-- <div class="pack">
+                <h1 class="text-3xl md:text-7xl text-stone-50 font-bold">PACKAGES</h1>
+
+            </div> -->
+            <section class="relative w-full h-[400px] lg:h-[500px] overflow-hidden pt-20 shadow-2xl">
+                <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover grayscale ">
+            <source src="./Media/package video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+                <div class="absolute inset-0 bg-slate-900 opacity-20 w-full h-[200px] lg:h-[300px]"></div>
+
+                <!-- Text Content -->
+                <div class="relative z-10 flex flex-col justify-center  h-full px-6 lg:px-20 text-white">
+                    <h1 class="text-4xl lg:text-9xl text-stone-300 font-bold textcon justify-center">PACKAGES
+                    </h1>
+                </div>
+            </section>
+
+        </div>
+    </div>
+    <!-- about -->
+    <div id="about2" class="bg--100 font-sans lg:mt-25 py-10 mx-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+                <!-- Bronze Package -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                    <!-- Dark Top Section -->
+                    <div class="bg-gray-800 text-white p-4 flex flex-col items-center">
+                        <h2 class="text-lg font-bold">BRONZE PACKAGE</h2>
+                        <p class="mt-3 text-sm text-center">
+                            The Bronze Package consists of 1 layer of Ceramic Pro 9H & 1 layer of Top-Coat applied over the vehicle's paint surfaces. This coating provides a beautiful glossy finish & permanent protection with 2-year warranty. T/c apply*.
+                        </p>
+                    </div>
+                    <!-- White Bottom Section -->
+                    <div class="p-6 flex flex-col flex-grow">
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li>1 Layer of CP 9H</li>
+                            <li>1 Layer of CP Top-Coat</li>
+                            <li>1 Layer of CP Rain on Glasses</li>
+                            <li>1 Layer of CP Plastic on exterior trims, fiber & rubber parts</li>
+                            <li>1 Layer of CP Wheel & Caliper on alloys</li>
+                            <li>3 Years of Benefits</li>
+                        </ul>
+                        <button class="mt-auto bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Silver Package -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                    <div class="bg-gray-800 text-white p-4 flex flex-col items-center">
+                        <h2 class="text-lg font-bold">SILVER PACKAGE</h2>
+                        <p class="mt-3 text-sm text-center">
+                            The Silver Package includes 3 layers of Ceramic Pro 9H & 1 layer of Top Coat applied over the vehicle's paint surfaces, providing protection from the elements with 3-years warranty. T/c apply*.
+                        </p>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li>3 Layers of CP 9H</li>
+                            <li>1 Layer of CP Top-Coat</li>
+                            <li>1 Layer of CP Rain on Glasses</li>
+                            <li>1 Layer of CP Plastic on exterior trims, fiber & rubber parts</li>
+                            <li>1 Layer of CP Wheel & Caliper on alloys</li>
+                            <li>4 Years of Benefits</li>
+                        </ul>
+                        <button class="mt-auto bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Gold Package -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                    <div class="bg-gray-800 text-white p-4 flex flex-col items-center">
+                        <h2 class="text-lg font-bold">GOLD PACKAGE</h2>
+                        <p class="mt-3 text-sm text-center">
+                            The Gold Package consists of 5 layers of Ceramic Pro 9H & 1 layer of Top-Coat applied to the vehicle's paint surfaces, providing permanent protection with 4-years warranty. T/c apply*.
+                        </p>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li>5 Layers of CP 9H</li>
+                            <li>1 Layer of CP Top-Coat</li>
+                            <li>1 Layer of CP Rain on Glasses</li>
+                            <li>1 Layer of CP Plastic on exterior trims, fiber & rubber parts</li>
+                            <li>1 Layer of CP Wheel & Caliper on alloys</li>
+                            <li>5 Years of Benefits</li>
+                        </ul>
+                        <button class="mt-auto bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold">Book Now</button>
+                    </div>
+                </div>
+
+                <!-- Platinum Package -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                    <div class="bg-gray-800 text-white p-4 flex flex-col items-center">
+                        <h2 class="text-lg font-bold">PLATINUM PACKAGE</h2>
+                        <p class="mt-3 text-sm text-center">
+                            The Platinum Package consists of 8 layers of Ceramic Pro 9H and 1 layer of Top-Coat applied to the vehicle's paint surfaces, providing permanent protection with 5-years warranty. T/c apply*.
+                        </p>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <ul class="space-y-2 text-sm text-gray-700">
+                            <li>8 Layers of CP 9H</li>
+                            <li>1 Layer of CP Top-Coat</li>
+                            <li>1 Layer of CP Rain on Glasses</li>
+                            <li>1 Layer of CP Plastic on exterior trims, fiber & rubber parts</li>
+                            <li>1 Layer of CP Wheel & Caliper on alloys</li>
+                            <li>6 Years of Benefits</li>
+                        </ul>
+                        <button class="mt-auto bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg font-semibold">Book Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- about-2 -->
+    <div id="about" class="py-12 bg-white-100">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-4">
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col">
+                <!-- Dark header -->
+                <div class="bg-gray-900 text-white p-6">
+                    <h2 class="text-2xl font-bold">KAVACA ION CPF Package</h2>
+                    <p class="text-sm text-gray-300 mt-2">
+                        The package offers full body Composite Protection Film (CPF) application with 7 years warranty - T/C Apply
+                    </p>
+                </div>
+
+                <!-- Body -->
+                <div class="p-6 flex-1 text-gray-800 space-y-3 text-sm">
+                    <p><strong>KAVACA ION CPF</strong> application on all painted parts, head lamps, tail lamps, glossy fiber parts, interior glossy finished panels, touch screen guards etc.</p>
+                    <p>ION Protective top coating application on top of the protection film surfaces.</p>
+                    <p>CP Glass Coating application on glass parts.</p>
+                    <p>CP Plastic Coating application on plastic & fiber parts.</p>
+                    <p>CP Wheel & Caliper Coating on alloy wheels & calipers.</p>
+                    <p>Interior & Engine bay deep cleaning & conditioning.</p>
+                    <p>7 years service warranty.</p>
+                    <p>6 yearly service slots. (1 service per year × 6)</p>
+                </div>
+
+                <!-- Footer button -->
+                <div class="bg-blue-500 text-white text-center py-3 font-semibold cursor-pointer hover:bg-blue-600">
+                    Book Now
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col">
+                <!-- Dark header -->
+                <div class="bg-gray-900 text-white p-6">
+                    <h2 class="text-2xl font-bold">KAVACA URBAN PPF PACKAGE</h2>
+                    <p class="text-sm text-gray-300 mt-2">
+                        The package offers full body Paint Protection Film (PPF) application with 5 years warranty - T/C Apply
+                    </p>
+                </div>
+
+                <!-- Body -->
+                <div class="p-6 flex-1 text-gray-800 space-y-3 text-sm">
+                    <p><strong>KAVACA URBAN PPF</strong> application on all painted parts, head lamps, tail lamps, glossy fiber parts, interior glossy finished panels, touch screen guards etc.</p>
+                    <p>ION Protective top coating application on top of the protection film surfaces.</p>
+                    <p>CP Glass Coating application on glass parts.</p>
+                    <p>CP Plastic Coating application on plastic & fiber parts.</p>
+                    <p>CP Wheel & Caliper Coating on alloy wheels & calipers.</p>
+                    <p>Interior & Engine bay deep cleaning & conditioning.</p>
+                    <p>5 years service warranty.</p>
+                    <p>4 yearly service slots. (1 service per year × 4)</p>
+                </div>
+
+                <!-- Footer button -->
+                <div class="bg-blue-500 text-white text-center py-3 font-semibold cursor-pointer hover:bg-blue-600">
+                    Book Now
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <!-- FOOTER  -->
+    <footer class="text-white py-10" style="background-color: #222b45;">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#" class="hover:text-white hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:text-white hover:underline">Packages</a></li>
+                    <li><a href="#" class="hover:text-white hover:underline">Ceramic Coatings</a></li>
+                    <li><a href="#" class="hover:text-white hover:underline">Gallery</a></li>
+                    <li><a href="#" class="hover:text-white hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                <p class="text-gray-300 text-sm">123 Shine Street, Auto City, USA</p>
+                <p class="text-gray-300 text-sm">Phone: +1 234 567 890</p>
+                <p class="text-gray-300 text-sm">Email: info@ceramicshine.com</p>
+            </div>
+
+            <!-- Social Media -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+                <div class="flex md:justify-start justify-center space-x-4 text-2xl">
+                    <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-red-500"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Opening Hours -->
+            <div>
+                <h3 class="text-lg font-semibold mb-4">Opening Hours</h3>
+                <ul class="space-y-1 text-gray-300 text-sm">
+                    <li>Mon - Fri: 9:00 AM - 6:00 PM</li>
+                    <li>Saturday: 10:00 AM - 4:00 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="mt-10 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
+            &copy; 2025 Ceramic Shine. All rights reserved.
+        </div>
+    </footer>
+
+
+
+
+
+
+</body>
+
+</html>
