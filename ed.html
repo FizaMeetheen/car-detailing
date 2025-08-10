@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css -->
+     <link rel="stylesheet" href="ed.css">
+    <!-- TAilwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Autour+One&family=Black+Han+Sans&family=Borel&family=Bungee+Spice&family=Cabin+Sketch:wght@400;700&family=Carattere&family=Chicle&family=Commissioner:wght@100..900&family=Delius+Unicase:wght@400;700&family=Diphylleia&family=Dokdo&family=Erica+One&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Grenze+Gotisch:wght@100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Lexend+Exa:wght@100..900&family=M+PLUS+1p&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Spray+Paint&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=ZCOOL+QingKe+HuangYou&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="bg-gray-900 text-gray-900 fixed z-100" style="width:100%;background-color:rgba(250, 246, 246, 0.616)">
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+        <div class="md:mx-20 flex md:justify-center items-center ">
+            <!-- Hamburger Menu (Mobile) -->
+
+            <label for="menu-toggle" class="cursor-pointer sm:hidden">
+                <i class="fas fa-bars text-xl ml-5"></i>
+            </label>
+
+            <!-- Logo -->
+            <div class="logo md:mr-10 shrink-0 md:ml-0 ml-25">
+                <img src="./media/logo2-removebg-preview.png" alt="Logo" class="h-30 w-auto"
+                    style="filter: contrast(150%);">
+            </div>
+
+            <!-- Menu Links desktop -->
+            <nav class="flex hidden md:flex">
+                <div class="contents text-gray-950 ">
+                    <a href="#" class="">HOME</a>
+                    <a href="#" class="">PACKAGES</a>
+                    <a href="#" class="">CERAMIC COATINGS</a>
+                    <a href="#" class="active">EXTERIOR DETAILING</a>
+                    <a href="#" class="">GALLERY</a>
+                    <a href="#" class="">CONTACT US</a>
+                </div>
+                <!-- Social Icons -->
+                <div class="social text-2xl text-gray-900 ml-20 ">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </nav>
+
+        </div>
+        <!-- Menu Links mobile -->
+        <nav class="mobile_nav hidden peer-checked:flex  flex-col">
+            <div class="contents text-gray-950 gap-10">
+                <a href="#" class="">HOME</a>
+                <a href="#" class="">PACKAGES</a>
+                <a href="#" class="">CERAMIC COATINGS</a>
+                <a href="#" class="active">EXTERIOR DETAILING</a>
+                <a href="#" class="">GALLERY</a>
+                <a href="#" class="">CONTACT US</a>
+            </div>
+            <!-- Social Icons -->
+            <div class="social text-2xl text-gray-900 ml-30 my-5 ">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- exterior detaling hero section -->
+
+    <section class="relative w-full h-[400px] lg:h-[500px] overflow-hidden pt-20 ">
+        <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover grayscale ">
+            <source src="https://www.detailingdevils.com/assets/video/website/chromerestoration.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="absolute inset-0 bg-slate-900 opacity-20 w-full h-[400px] lg:h-[500px]"></div>
+
+        <!-- Text Content -->
+        <div class="relative z-10 flex flex-col justify-center h-full px-6 lg:px-20 text-white">
+            <h1 class="text-4xl lg:text-6xl font-bold textcon justify-center">Turn Heads in Your freshly detailed Vehicle</h1>
+        </div>
+    </section>
+
+
+    <!-- Section 1 -->
+    <section class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-12">
+        <!-- Left Text -->
+        <div class="md:w-1/2 mb-8 md:mb-0">
+            <h1 class="text-3xl md:text-4xl font-bold uppercase mb-6 leading-snug text-blue-950">
+                Trust an Exterior Paint Specialist.<br>
+                We will eliminate the damage you can't see.
+            </h1>
+            <p class="text-black text-xl leading-relaxed">
+                Your car is always exposed to the elements, and it's always getting dirtier. <br>
+                But you don’t have to let dirt and grime compromise your ride. <br> Transform your
+                vehicle when you hire Legacy Detailing Studio for an <br>exterior detailing service.
+                We'll hand-wash your vehicle, then dry it with <br>warm filtered air and a paint-safe
+                automotive towel.
+            </p>
+        </div>
+        <!-- Right Image -->
+        <div class="md:w-1/2">
+            <img src="https://lirp.cdn-website.com/58edf9fc/dms3rep/multi/opt/Exterior-Detailing-04-1920w.jpg"
+                alt="Car Detailing" class="rounded shadow-lg">
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="relative bg-cover bg-center min-h-[500px]" style="background-image: url('./media/ed-2-bg.jpg');">
+
+        <div class="absolute inset-0 bg-stone-700/70"></div>
+
+
+        <div
+            class="relative z-10 container mx-auto flex flex-col md:flex-row items-center md:items-start py-16 px-6 gap-8">
+
+            <!-- Left Image -->
+            <div class="w-full md:w-1/2">
+                <img src="./media/ed-section-2.jpg" alt="Left Side" class="rounded-lg shadow-lg">
+            </div>
+
+            <!-- Right Text -->
+            <div class="md:w-1/2">
+                <h2 class="text-3xl md:text-4xl font-bold uppercase mb-6 text-grey-500">Get a Spotless Ride</h2>
+                <p class="text-white md:text-2xl leading-relaxed mb-6 ">
+                    If you want your car to look better than it did when you drove it off the lot,
+                    then you need to hire a professional to clean it. Our exterior detailing services
+                    are detailed and thorough. In addition to hand-washing your wheels and tires, we also offer:
+                </p>
+                <ul class="list-disc pl-6 text-gray-300 mb-6">
+                    <li><span class="text-white md:text-xl">Clay treatments</span></li>
+                    <li><span class="text-white md:text-xl">Iron removal services</span></li>
+                    <li><span class="text-white md:text-xl">Sealant and tire dressing applications</span></li>
+                </ul>
+                <p class="text-white md:text-2xl">
+                    Your vehicle is in good hands with our team. Contact us now to arrange.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Cards Section -->
+    <section class="container mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 ">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4 ">
+            <div class="relative group w-full h-48 overflow-hidden rounded-t-lg">
+                <!-- image 1 -->
+                <img src="./media/skinrestoration.webp" alt="Skin Restoration"
+                    class="absolute inset-0 w-full h-full object-cover group-hover:hidden">
+                <!-- Video -->
+                <video class="absolute inset-0 w-full h-full object-cover hidden group-hover:block" preload="none" loop
+                    muted playsinline autoplay>
+                    <source src="https://www.detailingdevils.com/assets/video/website/skinrestoration.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h3 class="mt-4 text-xl font-bold">Skin Restoration</h3>
+            <p class="mt-2 text-sm text-gray-600">Our Skin Restoration Service (SRS) eliminates stubborn contaminants
+                from a vehicle’s surface and restores its original factory finish.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4">
+
+            <div class="relative group w-full h-48 overflow-hidden rounded-t-lg">
+                <!-- image 2 -->
+                <img src="./media/headlightrestoration.webp" alt="Headlight Restoration"
+                    class="absolute inset-0 w-full h-full object-cover group-hover:hidden">
+                <video class="absolute inset-0 w-full h-full object-cover hidden group-hover:block" preload="none" loop
+                    muted playsinline autoplay>
+                    <source src="https://www.detailingdevils.com/assets/video/website/headlightrestoration.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h3 class="mt-4 text-xl font-bold">Headlight Restoration</h3>
+            <p class="mt-2 text-sm text-gray-600">Removes haze and dust from headlights, making them clear and shiny
+                again.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4">
+            <div class="relative group w-full h-48 overflow-hidden rounded-t-lg">
+                <!-- image 3 -->
+                <img src="./media/chromerestoration.webp" alt="Chrome Restoration"
+                    class="absolute inset-0 w-full h-full object-cover group-hover:hidden">
+                <video class="absolute inset-0 w-full h-full object-cover hidden group-hover:block" preload="none" loop
+                    muted playsinline autoplay>
+                    <source src="https://www.detailingdevils.com/assets/video/website/chromerestoration.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h3 class="mt-4 text-xl font-bold">Chrome Restoration</h3>
+            <p class="mt-2 text-sm text-gray-600">Restores chrome parts to a premium look by removing rust, scratches,
+                and water spots.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-lg shadow hover:shadow-xl transition p-4">
+            <div class="relative group w-full h-48 overflow-hidden rounded-t-lg">
+                <!-- image-4 -->
+                <img src="./media/wheelrestoration.webp" alt="Wheel Restoration"
+                    class="absolute inset-0 w-full h-full object-cover group-hover:hidden">
+                <video class="absolute inset-0 w-full h-full object-cover hidden group-hover:block " preload="none" loop
+                    muted playsinline autoplay>
+                    <source src="https://www.detailingdevils.com/assets/video/website/WHEELRESTORATION.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h3 class="mt-4 text-xl font-bold">Wheel Restoration</h3>
+            <p class="mt-2 text-sm text-gray-600">Restores wheels to a fresh, clean look, removing dirt and stains.</p>
+
+        </div>
+    </section>
+</body>
+
+</html>
